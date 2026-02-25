@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SLS Rebuild</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-black text-white">
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black py-3 border-bottom border-secondary"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- LEFT SIDE -->
+          <ul class="navbar-nav me-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Past Events
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Miami 2025</a></li>
+                <li><a class="dropdown-item" href="#">Santa Monica 2025</a></li>
+                <li><a class="dropdown-item" href="#">Brasilia 2025</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skaters</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">2026 Season</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+          </ul>
+
+          <!-- CENTER LOGO -->
+          <a class="navbar-brand mx-auto d-none d-lg-block" href="#">
+            <img
+              src="https://static.wixstatic.com/media/74db56_f0d156f4423e446a8a98f4c22936043c~mv2.png"
+              alt="SLS Logo"
+              height="55"
+            />
+          </a>
+
+          <!-- RIGHT SIDE -->
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Watch
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Sydney</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Results
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="#">Historical Results</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Wolfpack</a>
+            </li>
+
+            <li class="nav-item ms-3">
+              <button class="btn btn-light rounded-pill px-4">
+                Buy Tickets
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MEDIA CAROUSEL -->
+    <section class="bg-black py-5">
+      <div class="container">
+        <div 
+        id="slsCarousel" 
+        class="carousel slide" 
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+        data-bs-pause="false"
+        >
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#slsCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slsCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slsCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+          <!-- Carousel Items -->
+          <div class="carousel-inner">
+            <!-- Slide 1 (Image) -->
+            <div class="carousel-item active text-center">
+              <img
+                src="https://static.wixstatic.com/media/541236_22cf4729ae464bf69a148931ccb74b8c~mv2.jpg"
+                class="img-fluid rounded"
+                alt="Event Image"
+              />
+            </div>
+
+            <!-- Slide 2 (Image) -->
+            <div class="carousel-item text-center">
+              <img
+                src="https://static.wixstatic.com/media/541236_9c49b22549a1488f9ed28e86d58bb18d~mv2.jpg/v1/fill/w_1953,h_1061,fp_0.57_0.4,q_90,enc_avif,quality_auto/541236_9c49b22549a1488f9ed28e86d58bb18d~mv2.jpg"
+                class="img-fluid rounded"
+                alt="Skateboarding Action"
+              />
+            </div>
+
+            <!-- Slide 3 (Video) -->
+            <div class="carousel-item text-center">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/watch?v=Hj_-Frtx9tk&pp=ygUDc2xz"
+                  title="SLS Video"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#slsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#slsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE SECTION -->
+    <section class="py-5 text-center">
+      <div class="container">
+        <h4 class="mb-5 text-uppercase">Stay Up To Date On Everything SLS</h4>
+
+        <form class="row justify-content-center g-3">
+          <div class="col-md-4">
+            <input
+              type="email"
+              class="form-control bg-dark text-white border-secondary"
+              placeholder="Email"
+            />
+          </div>
+
+          <div class="col-md-4">
+            <input
+              type="tel"
+              class="form-control bg-dark text-white border-secondary"
+              placeholder="Phone"
+            />
+          </div>
+
+          <div class="col-12">
+            <div class="form-check d-flex justify-content-center">
+              <input class="form-check-input me-2" type="checkbox" />
+              <label class="form-check-label">
+                I agree to receive marketing communications
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-outline-light rounded-pill px-5">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-5 border-top border-secondary">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-3">
+            <img
+              src="https://static.wixstatic.com/media/74db56_f0d156f4423e446a8a98f4c22936043c~mv2.png"
+              alt="SLS Logo"
+              height="60"
+            />
+          </div>
+
+          <div class="col-md-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Results</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Skaters</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">News</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Shop</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 text-md-end">
+            <button class="btn btn-light rounded-pill px-4">Buy Tickets</button>
+          </div>
+        </div>
+
+        <div class="row small text-secondary mt-4">
+          <div class="col-md-6">
+            © 2026 Street League Skateboarding. All Rights Reserved.
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-secondary me-3">Privacy Policy</a>
+            <a href="#" class="text-secondary">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
